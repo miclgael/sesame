@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "Tabs",
+    "version": "0.0.1",
+    "description": "open current tab as a localhost (with same path)",
+    "applications": {
+        "gecko": {
+            "strict_min_version": "56.0a1"
+        }
+    },
+    "icons": {
+        "48": "tabs-icon.png"
+    },
+
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "permissions": [
+        "menus",
+        "activeTab",
+        "contextMenus",
+        "tabs"
+    ]
+}
