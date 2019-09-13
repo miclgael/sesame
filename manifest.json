@@ -9,6 +9,7 @@
             "strict_min_version": "56.0a1"
         }
     },
+
     "icons": {
         "48": "tabs-icon.png"
     },
@@ -21,6 +22,14 @@
         "menus",
         "activeTab",
         "contextMenus",
-        "tabs"
-    ]
+        "tabs",
+        "storage",
+        "unlimitedStorage",
+        "<all_urls>"
+    ],
+
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true
+    }
 }

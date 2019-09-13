@@ -1,3 +1,5 @@
+/* Test environment variables are working */
+
 /*
 Called when the item has been created, or when creation failed due to an error.
 We'll just log success/failure here.
@@ -70,6 +72,11 @@ function updateCheckUncheck() {
     }
 }
 
+
+function identifyCurrentTab(tab) {
+    console.log(tab.url)
+}
+
 /*
 The click event listener, where we perform the appropriate action given the
 ID of the menu item that was clicked.
@@ -82,6 +89,7 @@ browser.menus.onClicked.addListener((info, tab) => {
     switch (info.menuItemId) {
         case "tab-localhost":
             console.log(info, tab);
+            identifyCurrentTab(tab)
             break;
         case "tab-staging":
             console.log(info, tab);
