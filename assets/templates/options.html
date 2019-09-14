@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+            input { margin-bottom: 1em; }
+        </style>
+    </head>
+    <body>
+        <h1>Set your environment variables</h1>
+        <p>These URLs will be saved to local storage, and are used by the add-on to swap URLs in and out.</p>
+        <form id="options">
+            <div style="display:grid; grid-template-columns: 200px 1fr;">
+                <label for="localhost">localhost</label>
+                <input placeholder="http://localhost:8888" type="text" name="localhost" id="localhost" />
+
+                <label for="staging">staging</label>
+                <input placeholder="https://staging.domain.com" type="text" name="staging" id="staging" />
+
+                <label for="www">www</label>
+                <input placeholder="https://www.domain.com" type="text" name="www" id="www" />
+            </div>
+
+            <button type="submit">Save</button>
+        </form>
+        <script src="../scripts/options.js"></script>
+    </body>
+
+</html>

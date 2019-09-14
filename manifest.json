@@ -6,30 +6,36 @@
     "description": "open current tab as a localhost (with same path)",
     "applications": {
         "gecko": {
-            "strict_min_version": "56.0a1"
+            "strict_min_version": "56.0a1",
+            "id": "michael@michaelgale.dev"
         }
     },
 
     "icons": {
-        "48": "tabs-icon.png"
+        "48": "/assets/icons/tabs-icon.png"
     },
+   
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["/assets/scripts/background.js"]
+    }],
 
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["/assets/scripts/background.js"]
     },
 
+    "options_ui": {
+        "page": "/assets/templates/options.html"
+    },
+    
     "permissions": [
         "menus",
         "activeTab",
         "contextMenus",
         "tabs",
         "storage",
-        "unlimitedStorage",
-        "<all_urls>"
-    ],
+        "unlimitedStorage"
+    ]
 
-    "options_ui": {
-        "page": "options.html",
-        "browser_style": true
-    }
+    
 }

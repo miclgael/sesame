@@ -12,6 +12,18 @@ function onCreated() {
     }
 }
 
+function onError(error) {
+    console.log(`Error: ${error}`);
+}
+
+function checkOptions(result) {
+    console.log('from options', result);
+};
+
+var getting = browser.storage.sync.get();
+getting.then(checkOptions, onError);
+
+
 /*
 Called when the item has been removed.
 We'll just log success here.
