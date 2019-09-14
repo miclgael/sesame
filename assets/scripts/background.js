@@ -1,9 +1,30 @@
-/* Test environment variables are working */
+const contexts = ['localhost', 'staging', 'www'];
 
-/*
-Called when the item has been created, or when creation failed due to an error.
-We'll just log success/failure here.
-*/
+/**
+ * Create a context menu items (right click on any tab)
+ * @param {Array} contexts 
+ */
+function createMenuItems(contexts) {
+    contexts.forEach(label => {
+        browser.menus.create({
+            id: `menu-item-${label}`,
+            title: `Reopen as ${label}`,
+            contexts: ["tab"]
+        }, onCreated);
+    });
+}
+
+
+
+/* Fetch from the storage objects in */
+const getting = browser.storage.sync.get();
+      getting.then(checkOptions, onError);
+
+function checkOptions(result) {
+    console.log('from options', result);
+};
+
+
 function onCreated() {
     if (browser.runtime.lastError) {
         console.log(`Error: ${browser.runtime.lastError}`);
@@ -12,54 +33,15 @@ function onCreated() {
     }
 }
 
-function onError(error) {
-    console.log(`Error: ${error}`);
-}
-
-function checkOptions(result) {
-    console.log('from options', result);
-};
-
-var getting = browser.storage.sync.get();
-getting.then(checkOptions, onError);
-
-
-/*
-Called when the item has been removed.
-We'll just log success here.
-*/
 function onRemoved() {
     console.log("Item removed successfully");
 }
 
-/*
-Called when there was an error.
-We'll just log the error here.
-*/
 function onError(error) {
     console.log(`Error: ${error}`);
 }
 
-/*
-Create all the context menu items.
-*/
-browser.menus.create({
-    id: "tab-localhost",
-    title: 'Reopen as localhost',
-    contexts: ["tab"]
-}, onCreated);
 
-browser.menus.create({
-    id: "tab-staging",
-    title: 'Reopen as staging',
-    contexts: ["tab"]
-}, onCreated);
-
-browser.menus.create({
-    id: "tab-www",
-    title: 'Reopen as www',
-    contexts: ["tab"]
-}, onCreated);
 
 var checkedState = true;
 
@@ -99,14 +81,14 @@ browser.menus.onClicked.addListener((info, tab) => {
     // tab = the tab that was clicked info
 
     switch (info.menuItemId) {
-        case "tab-localhost":
+        case "menu-item-localhost":
             console.log(info, tab);
             identifyCurrentTab(tab)
             break;
-        case "tab-staging":
+        case "menu-item-staging":
             console.log(info, tab);
             break;
-        case "tab-www":
+        case "menu-item-www":
             console.log(info, tab);
             break;
     }
