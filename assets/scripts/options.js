@@ -1,7 +1,7 @@
 /* Store references to the form inputs on the options page */
-const FormInputLocal = document.getElementById("localhost").value;
-const FormInputStaging = document.getElementById("staging").value;
-const FormInputProduction =  document.getElementById("www").value;
+const FormInputLocal = document.getElementById("localhost");
+const FormInputStaging = document.getElementById("staging");
+const FormInputProduction =  document.getElementById("www");
 
 /**
  * Save current values of the form into local storage object
@@ -10,9 +10,9 @@ const FormInputProduction =  document.getElementById("www").value;
 function saveOptions(e) {
     e.preventDefault();
     browser.storage.sync.set({
-        localhost: FormInputLocal,
-        staging: FormInputStaging,
-        www: FormInputProduction
+        localhost: FormInputLocal.value,
+        staging: FormInputStaging.value,
+        www: FormInputProduction.value
     });
 }
 
@@ -23,9 +23,9 @@ function restoreOptions() {
 
     // 1. Set defaults if there's nothing in the local storage yet
     function setCurrentChoice(result) {
-        FormInputLocal = result.localhost || "http://localhost:8888";
-        FormInputStaging = result.staging || "https://staging.yourdomain.com";
-        FormInputProduction = result.www  || "https://www.yourdomain.com";
+        FormInputLocal.value = result.localhost || "http://localhost:8888";
+        FormInputStaging.value = result.staging || "https://staging.yourdomain.com";
+        FormInputProduction.value = result.www  || "https://www.yourdomain.com";
     }
 
     // 2. Print an error message to `about:devtools-toolbox`
