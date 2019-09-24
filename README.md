@@ -4,6 +4,8 @@ A browser extension (currently Firefox-only). Open current tab as a localhost (w
 
 ![Tabs demo](assets/demonstration.gif)
 
+👆 Gif explains better than my bad words
+
 ## How it works
 
 This is not a *published* extension, so it must be added manually. Navigate to [about:debugging#/runtime/this-firefox](about:debugging). From there you can load it as a temporary add-on by opening the manifest file.
@@ -16,7 +18,7 @@ You should go to the Options page, and set up your development URLs.
 
 There is no checking or conversion of these strings, so make sure *DO* include a protocol, but *DON'T* include a trailing `/` on your URLs.
 
-✅ Good: `http://localhost:8888`
+✅ Good: `http://localhost:8888` <br>
 🚫 Bad: `localhost:8888/`
 
 ## Contributing
