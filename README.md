@@ -8,7 +8,13 @@ A browser extension (currently Firefox-only). Open current tab as a localhost (w
 
 ## How it works
 
-This is not a *published* extension, so it must be added manually. Navigate to [about:debugging#/runtime/this-firefox](about:debugging). From there you can load it as a temporary add-on by opening the manifest file.
+This is not a *published* extension, but there is a signed/packaged release available at [https://github.com/miclgael/tabs/releases/](https://github.com/miclgael/tabs/releases/)
+
+Supports Firefox + Firefox For Android v57+
+
+**If you're developing..**
+
+You can load the extension in debug mode. Navigate to [about:debugging#/runtime/this-firefox](about:debugging#/runtime/this-firefox). From there you can load it as a temporary add-on by opening the manifest file.
 
 ## Using the add-on
 
