@@ -89,3 +89,4 @@ typings/
 
 # Mac Garbage
 .DS_Store
+*.zip

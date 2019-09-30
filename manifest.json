@@ -6,7 +6,7 @@
     "description": "open current tab as a localhost (with same path)",
     "applications": {
         "gecko": {
-            "strict_min_version": "57",
+            "strict_min_version": "57.0",
             "id": "michael@michaelgale.dev"
         }
     },
