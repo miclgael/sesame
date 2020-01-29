@@ -29,7 +29,8 @@ There is no checking or conversion of these strings, so make sure *DO* include a
 
 ## Contributing
 
-I would really like to help with:
+I would really like your help with:
+
 - Developing a Chrome version
 - Making these docs more understandable
 - Bug fixes
