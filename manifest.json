@@ -1,5 +1,4 @@
 {
-
     "manifest_version": 2,
     "name": "Tabs",
     "version": "0.0.2",
@@ -10,24 +9,19 @@
             "id": "michael@michaelgale.dev"
         }
     },
-
     "icons": {
         "48": "/assets/icons/tabs-icon.png"
     },
-   
     "content_scripts": [{
         "matches": ["<all_urls>"],
         "js": ["/assets/scripts/background.js"]
     }],
-
     "background": {
         "scripts": ["/assets/scripts/background.js"]
     },
-
     "options_ui": {
         "page": "/assets/templates/options.html"
     },
-    
     "permissions": [
         "menus",
         "activeTab",
@@ -36,6 +30,4 @@
         "storage",
         "unlimitedStorage"
     ]
-
-    
 }
