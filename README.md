@@ -1,14 +1,14 @@
 # Tabs (need better name)
 
-A browser extension (currently Firefox-only). Open current tab as a localhost (with same path / queries, etc) 
+A Firefox browser extension that provides a simple way of reopening an existing tab as a localhost, or staging URL (with same path / query params, hashes, etc). Why? Well, it makes using and sharing mid-development admin pages a touch easier. 
 
 ![Tabs demo](assets/demonstration.gif)
 
-👆 Gif explains better than my bad words
+👆 This gif explains better than my bad words.
 
-## How it works
+## Installing
 
-This is not a *published* extension, but there is a signed/packaged release available at [https://github.com/miclgael/tabs/releases/](https://github.com/miclgael/tabs/releases/)
+This is not a *published* extension. There is a signed/packaged release available at [https://github.com/miclgael/tabs/releases/](https://github.com/miclgael/tabs/releases/)
 
 Supports Firefox + Firefox For Android v57+
 
