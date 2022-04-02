@@ -1,33 +1,35 @@
 {
-    "manifest_version": 2,
-    "name": "Tabs",
-    "version": "0.0.2",
-    "description": "open current tab as a localhost (with same path)",
-    "applications": {
-        "gecko": {
-            "strict_min_version": "57.0",
-            "id": "michael@michaelgale.dev"
-        }
-    },
-    "icons": {
-        "48": "/assets/icons/tabs-icon.png"
-    },
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "js": ["/assets/scripts/background.js"]
-    }],
-    "background": {
-        "scripts": ["/assets/scripts/background.js"]
-    },
-    "options_ui": {
-        "page": "/assets/templates/options.html"
-    },
-    "permissions": [
-        "menus",
-        "activeTab",
-        "contextMenus",
-        "tabs",
-        "storage",
-        "unlimitedStorage"
-    ]
+  "manifest_version": 2,
+  "name": "Tabs",
+  "version": "0.0.2",
+  "description": "open current tab as a localhost (with same path)",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0",
+      "id": "michael@michaelgale.dev"
+    }
+  },
+  "icons": {
+    "48": "/assets/icons/tabs-icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["/assets/scripts/background.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["/assets/scripts/background.js"]
+  },
+  "options_ui": {
+    "page": "/assets/templates/options.html"
+  },
+  "permissions": [
+    "menus",
+    "activeTab",
+    "contextMenus",
+    "tabs",
+    "storage",
+    "unlimitedStorage"
+  ]
 }
