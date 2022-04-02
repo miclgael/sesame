@@ -1,12 +1,37 @@
-# Tabs (need better name)
+# Sesame﹅
 
-A Firefox browser extension that provides a simple way of reopening an existing tab as a localhost, or staging URL (with same path / query params, hashes, etc). Why? Well, it makes using and sharing mid-development admin pages a touch easier. 
+A browser extension to hot-swap the domain name on any open web page, preserving directory structure and query params. Useful when developing and testing the same content across multiple domains.
 
-![Tabs demo](assets/demonstration.gif)
+> **right click anywhere &rarr; sesame &rarr; reopen as:**<br>
+> ﹅ localhost<br>
+> ﹅ staging<br>
+> ﹅ production
 
-👆 This gif explains better than my bad words.
+## Available contexts
 
-## Installing
+<!--
+### Right click anywhere on a page
+
+"Reopen this page as ﹅"
+
+### Right click any hyperlink
+
+"Reopen this URL in as ﹅"
+-->
+
+### Right click any open tab
+
+"Reopen this page as ﹅"
+
+_More contexts coming soon :)_
+
+## Demonstration
+
+![Old Sesame demo](assets/demonstration.gif)
+
+👆 This gif may explain better than words
+
+## Installation
 
 This is not a *published* extension. There is a signed/packaged release available at [https://github.com/miclgael/tabs/releases/](https://github.com/miclgael/tabs/releases/)
 
