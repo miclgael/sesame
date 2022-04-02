@@ -33,7 +33,7 @@ _More contexts coming soon :)_
 
 ## Installation
 
-This is not a *published* extension. There is a signed/packaged release available at [https://github.com/miclgael/tabs/releases/](https://github.com/miclgael/tabs/releases/)
+This is not a _published_ extension. There is a signed/packaged release available at [https://github.com/miclgael/sesame/releases/](https://github.com/miclgael/sesame/releases/)
 
 Supports Firefox + Firefox For Android v57+
 
@@ -47,7 +47,7 @@ Once installed, you can right-click any open tab to find a new "Tabs" menu, some
 
 You should go to the Options page, and set up your development URLs.
 
-There is no checking or conversion of these strings, so make sure *DO* include a protocol, but *DON'T* include a trailing `/` on your URLs.
+There is no checking or conversion of these strings, so make sure _DO_ include a protocol, but _DON'T_ include a trailing `/` on your URLs.
 
 ✅ Good: `http://localhost:8888` <br>
 🚫 Bad: `localhost:8888/`
@@ -61,21 +61,21 @@ I would really like your help with:
 - Bug fixes
 - Testing / writing unit tests
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests. 
+Please read [CONTRIBUTING.md](https://github.com/miclgael/sesame/blob/main/.github/CONTRIBUTING.md) for details on the code of conduct, and the process for submitting pull requests.
 
 ## Versioning
 
-I use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/miclgael/tabs/tags). 
+I use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/miclgael/sesame/tags).
 
 ## Authors
 
-* **Michael Gale** - *maintainer* - [miclgael](https://github.com/miclgael)
+- **Michael Gale** - _maintainer_ - [miclgael](https://github.com/miclgael)
 
-See also the list of [contributors](https://github.com/miclgael/tabs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/miclgael/sesame/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENCE](https://github.com/miclgael/tabs/blob/master/LICENCE) file for details
+This project is licensed under the MIT License - see the [LICENCE](https://github.com/miclgael/sesame/blob/main/LICENCE) file for details
 
 ## Acknowledgements
 
