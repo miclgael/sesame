@@ -1,6 +1,11 @@
 # Sesame﹅
 
-A browser extension to hot-swap the domain name on any open web page, preserving directory structure and query params. Useful when developing and testing the same content across multiple domains.
+<p align="center">
+  <img src="src/assets/icons/48@2x.png" width="48" height="48" />
+</p>
+
+<p align="center">
+Hot-swap the domain name on any open web page, <br>preserving directory structure and query params.</p>
 
 > **right click anywhere &rarr; sesame &rarr; reopen as:**<br>
 > ﹅ localhost<br>
@@ -19,7 +24,7 @@ A browser extension to hot-swap the domain name on any open web page, preserving
 "Reopen this URL in as ﹅"
 -->
 
-### Right click any open tab
+#### Right click any open tab
 
 "Reopen this page as ﹅"
 
@@ -27,7 +32,7 @@ _More contexts coming soon :)_
 
 ## Demonstration
 
-![Old Sesame demo](assets/demonstration.gif)
+![Old Sesame demo](.github/docs/images/demonstration.gif)
 
 👆 This gif may explain better than words
 
