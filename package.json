@@ -1,0 +1,34 @@
+{
+  "name": "sesame",
+  "version": "0.2.0",
+  "description": "Hot-swap the domain name on any open web page, preserving directory structure and query params.",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:watch:verbose": "jest --watchAll --verbose",
+    "serve": "web-ext run -s ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miclgael/sesame.git"
+  },
+  "keywords": [
+    "extensions",
+    "mozilla",
+    "firefox"
+  ],
+  "author": "Michael Gale <michael@michaelgale.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miclgael/sesame/issues"
+  },
+  "homepage": "https://github.com/miclgael/sesame#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "webextension-polyfill": "^0.9.0"
+  }
+}
