@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Sesame﹅",
   "version": "0.2.0",
-  "description": "open current tab as a localhost (with same path)",
+  "description": "Hot-swap the domain name on any open web page, preserving directory structure and query params.",
   "applications": {
     "gecko": {
       "strict_min_version": "57.0",
