@@ -4,9 +4,9 @@
   "description": "Hot-swap the domain name on any open web page, preserving directory structure and query params.",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watchAll",
-    "test:watch:verbose": "jest --watchAll --verbose",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll",
+    "test:watch:verbose": "NODE_OPTIONS=--experimental-vm-modules npx jest --watchAll --verbose",
     "serve": "web-ext run -s ./src"
   },
   "repository": {

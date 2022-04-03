@@ -1,10 +1,11 @@
+import { updateUri } from "../src/helpers/updateUri";
+
 const contexts = ["localhost", "staging", "www"];
 
 /**
  * Create a context menu items (right click on any tab)
  * @param {Array} contexts
  */
-// function createMenuItems(contexts) {
 contexts.forEach((label) => {
   browser.menus.create(
     {
@@ -25,7 +26,6 @@ browser.menus.create(
   },
   onCreated
 );
-// }
 
 function onCreated() {
   if (browser.runtime.lastError) {
@@ -47,16 +47,6 @@ function identifyCurrentTab(tab) {
   console.log(tab.url);
 }
 
-/**
- * Convert the base of a given URL into desired output URL, ready to for redirection!
- * @param {String} url - full starting url to pass
- * @param {String} newOrigin - new origin / base
- */
-function swapBaseUrl(url, newOrigin) {
-  url = new URL(url); // allow use of window.location methods
-  return newOrigin + url.href.split(url.origin)[1];
-}
-
 /*
 The click event listener, where we perform the appropriate action given the
 ID of the menu item that was clicked.
@@ -73,7 +63,7 @@ browser.menus.onClicked.addListener((info, tab) => {
 
       getting.then((result) => {
         browser.tabs.update(tab.id, {
-          url: swapBaseUrl(tab.url, result.localhost),
+          url: updateUri(tab.url, result.localhost),
         });
       }, onError);
 
@@ -81,7 +71,7 @@ browser.menus.onClicked.addListener((info, tab) => {
     case "menu-item-staging":
       getting.then((result) => {
         browser.tabs.update(tab.id, {
-          url: swapBaseUrl(tab.url, result.staging),
+          url: updateUri(tab.url, result.staging),
         });
       }, onError);
 
@@ -89,7 +79,7 @@ browser.menus.onClicked.addListener((info, tab) => {
     case "menu-item-www":
       getting.then((result) => {
         browser.tabs.update(tab.id, {
-          url: swapBaseUrl(tab.url, result.www),
+          url: updateUri(tab.url, result.www),
         });
       }, onError);
 
