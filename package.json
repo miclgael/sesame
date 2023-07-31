@@ -26,7 +26,7 @@
   "homepage": "https://github.com/miclgael/sesame#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.22.9",
-    "babel-jest": "^29.6.1",
+    "babel-jest": "^29.6.2",
     "jest": "^27.5.1",
     "ts-jest": "^27.1.4",
     "webextension-polyfill": "^0.10.0"
