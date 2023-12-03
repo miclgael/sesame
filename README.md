@@ -1,5 +1,7 @@
 # Sesame﹅
 
+> ⚠️ This repository has been archived, as of December 3rd, 2023. 
+
 A browser extension to hot-swap the domain name on any open web page, preserving directory structure and query params. Useful when developing and testing the same content across multiple domains.
 
 > **right click anywhere &rarr; sesame &rarr; reopen as:**<br>
